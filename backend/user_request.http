@@ -1,0 +1,55 @@
+###
+Get http://localhost:3000/api/v1/users/
+
+###
+POST http://localhost:3000/api/v1/users/register
+Content-Type: application/json
+
+{
+    "email": "samuel@gmail.com",
+    "user_name": "samuel",
+    "password": "root",
+    "pet_name": "campeon",
+    "pet_type": 1
+    
+}
+
+###
+POST http://localhost:3000/api/v1/users/register
+Content-Type: application/json
+
+{
+    "email": "alejandro@gmail.com",
+    "user_name": "alejandro",
+    "password": "123",
+    "pet_name": "charlotte",
+    "pet_type": "gato"
+    
+}
+
+### adb012e3-060c-4ec8-bd63-bf19c59fab6e" dd569354-fc59-48f4-ae94-b98c38b87e8b
+Get http://localhost:3000/api/v1/users/dd569354-fc59-48f4-ae94-b98c38b87e8b
+
+###
+PATCH http://localhost:3000/api/v1/users/dd569354-fc59-48f4-ae94-b98c38b87e8b
+Content-Type: application/json
+
+{
+    "pet_name": "Keyla",
+    "pet_type": 1
+    
+}
+
+###
+DELETE http://localhost:3000/api/v1/users/c4c20815-b00c-4c45-8e72-6987c0eb7269
+
+###
+POST http://localhost:3000/api/v1/users/login
+Content-Type: application/json
+
+{
+    "email": "samuel@gmail.com",
+    "password": "root"
+    
+}
+

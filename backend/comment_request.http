@@ -1,0 +1,46 @@
+###
+Get http://localhost:3000/api/v1/comments/
+
+###
+POST http://localhost:3000/api/v1/comments/
+Content-Type: application/json
+
+{
+    "comment_content": "He visto un perro similar por el barrio La Base, ponte en contacto conmigo al número 12345",
+    "user_id": "adb012e3-060c-4ec8-bd63-bf19c59fab6e",
+    "post_id": "3a4c1f2d-cee9-4591-8976-63e08f224da1"
+    
+}
+
+###
+POST http://localhost:3000/api/v1/comments/
+Content-Type: application/json
+
+{
+    "comment_content": "Puede ser que esta triste, a mi gato le pasaba algo asi",
+    "user_id": "",
+    "post_id": ""
+    
+}
+
+###
+Get http://localhost:3000/api/v1/users/adb012e3-060c-4ec8-bd63-bf19c59fab6e/comments
+
+###
+Get http://localhost:3000/api/v1/posts/3a4c1f2d-cee9-4591-8976-63e08f224da1/comments
+
+###
+Get http://localhost:3000/api/v1/comments/139e282d-38b8-4dcb-935e-e40ba1de1adc
+
+###
+PATCH http://localhost:3000/api/v1/comments/139e282d-38b8-4dcb-935e-e40ba1de1adc
+Content-Type: application/json
+
+{
+    "comment_content": "Mi mama dice que lo mejor es llevarlo al veterinario"
+    
+}
+
+###
+DELETE http://localhost:3000/api/v1/comments/2385a3d5-fe8c-4afb-84da-25e41868d12b
+

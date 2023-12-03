@@ -1,0 +1,51 @@
+###
+Get http://localhost:3000/api/v1/posts/
+
+###
+POST http://localhost:3000/api/v1/posts/
+Content-Type: application/json
+
+{
+    "post_title": "Se perdió mi mascota",
+    "post_content": "Mi perro se escapo esta mañana en el barrio el Trébol y no aparece aún",
+    "post_type": "3",
+    "src_image": "http/imagen1.png",
+    "pet_type": "1",
+    "user_id": "c4c20815-b00c-4c45-8e72-6987c0eb7269"
+    
+}
+
+###
+POST http://localhost:3000/api/v1/posts/
+Content-Type: application/json
+
+{
+    "post_title": "Ayuda: mi mascota no quiere comer",
+    "post_content": "Mi gata no quiere salir de la cama ni comer, no se que le pasa",
+    "post_type": "2",
+    "src_image": "http/imagen2.png",
+    "pet_type": "2",
+    "user_id": "adb012e3-060c-4ec8-bd63-bf19c59fab6e"
+    
+}
+
+###
+Get http://localhost:3000/api/v1/users/adb012e3-060c-4ec8-bd63-bf19c59fab6e/posts
+
+###
+Get http://localhost:3000/api/v1/posts/?post_type=2
+
+###
+Get http://localhost:3000/api/v1/posts/314c027c-f84c-4bb0-a77e-1f1e499daf24
+
+###
+PATCH http://localhost:3000/api/v1/posts/314c027c-f84c-4bb0-a77e-1f1e499daf24
+Content-Type: application/json
+
+{
+    "post_title": "Campi se aporreo la pata"
+    
+}
+
+###
+DELETE http://localhost:3000/api/v1/posts/314c027c-f84c-4bb0-a77e-1f1e499daf24
